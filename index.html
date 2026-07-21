@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Carlos Renato, desenvolvedor em formação." />
+    <meta name="theme-color" content="#0b0d10" />
+    <title>Carlos Renato — Desenvolvedor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Carlos Renato, início">CR<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#about" data-i18n="nav.about">Sobre</a>
+        <a href="#projects" data-i18n="nav.projects">Projetos</a>
+        <a href="#journey" data-i18n="nav.journey">Jornada</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" aria-label="Change language"><span>PT</span><span class="toggle-divider">/</span><span>EN</span></button>
+        <a class="contact-link" href="mailto:crportelamoreira@gmail.com"><span data-i18n="nav.contact">Contato</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-meta reveal"><span class="status-dot"></span><span data-i18n="hero.availability">Disponível para oportunidades</span></div>
+        <div class="monogram" aria-hidden="true">CR</div>
+        <div class="hero-content reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">01 — PORTFÓLIO / 2026</p>
+          <h1 id="hero-title" data-i18n-html="hero.title">Construindo experiências digitais <em>claras</em> e funcionais.</h1>
+          <p class="hero-copy" data-i18n="hero.copy">Sou Carlos Renato, desenvolvedor em formação. Transformo ideias e necessidades reais em interfaces que fazem sentido para as pessoas.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"><span data-i18n="hero.projects">Explorar projetos</span><span aria-hidden="true">↓</span></a>
+            <a class="button button-text" href="mailto:crportelamoreira@gmail.com"><span data-i18n="hero.email">Vamos conversar</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"><span data-i18n="hero.scroll">Role para descobrir</span><span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-number reveal">02</div>
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="about.eyebrow">SOBRE MIM</p><h2 id="about-title" data-i18n-html="about.title">Código com intenção.<br /><em>Aprendizado</em> em movimento.</h2></div>
+        <div class="about-grid">
+          <figure class="portrait reveal"><img src="assets/carlos-renato-workspace.png" alt="Carlos Renato em seu espaço de trabalho com dois monitores" /><figcaption data-i18n="about.caption">Meu espaço de criação — onde ideias viram interfaces.</figcaption></figure>
+          <div class="about-copy reveal"><p data-i18n="about.p1">Estou construindo minha jornada em desenvolvimento web com curiosidade, prática e atenção às pessoas que usam o produto.</p><p data-i18n="about.p2">Gosto de partir de problemas do mundo real e organizar soluções simples, úteis e visualmente consistentes. Cada projeto é uma oportunidade de aprender um pouco mais sobre produto, código e colaboração.</p><a class="inline-link" href="#journey"><span data-i18n="about.link">Conheça minha jornada</span><span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-top reveal"><div><p class="eyebrow" data-i18n="projects.eyebrow">03 — PROJETOS SELECIONADOS</p><h2 id="projects-title" data-i18n-html="projects.title">Aprender é melhor<br />quando se <em>constrói.</em></h2></div><p class="section-intro" data-i18n="projects.intro">Projetos que transformam requisitos em experiências úteis, acessíveis e bem organizadas.</p></div>
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="section-number reveal">04</div>
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="journey.eyebrow">JORNADA</p><h2 id="journey-title" data-i18n-html="journey.title">Em constante<br /><em>construção.</em></h2></div>
+        <ol class="timeline" id="timeline"></ol>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-top reveal"><div><p class="eyebrow" data-i18n="skills.eyebrow">05 — FERRAMENTAS</p><h2 id="skills-title" data-i18n-html="skills.title">Tecnologia a serviço<br />da <em>experiência.</em></h2></div></div>
+        <div class="skill-grid" id="skill-grid"></div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow reveal" data-i18n="contact.eyebrow">06 — CONTATO</p>
+        <h2 id="contact-title" class="reveal" data-i18n-html="contact.title">Vamos criar algo<br /><em>relevante?</em></h2>
+        <a class="contact-email reveal" href="mailto:crportelamoreira@gmail.com">crportelamoreira@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="contact-bottom reveal"><p data-i18n="contact.copy">Aberto a oportunidades, colaborações e boas conversas.</p><a href="https://github.com/carlosrenatom" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+    <footer><span>© <span id="year"></span> Carlos Renato</span><span data-i18n="footer">Feito com intenção.</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
