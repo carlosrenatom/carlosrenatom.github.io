@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="overrides.css" />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
@@ -72,7 +73,9 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <p class="eyebrow reveal" data-i18n="contact.eyebrow">06 — CONTATO</p>
         <h2 id="contact-title" class="reveal" data-i18n-html="contact.title">Vamos criar algo<br /><em>relevante?</em></h2>
-        <a class="contact-email reveal" href="mailto:crportelamoreira@gmail.com">crportelamoreira@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="contact-email reveal" href="mailto:crportelamoreira@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">crportelamoreira@gmail.com <span aria-hidden="true">↗</span></a>
+        <button class="email-copy reveal" type="button" data-email="crportelamoreira@gmail.com" data-i18n="contact.copyEmail">Copiar e-mail</button>
+        <p class="email-feedback" aria-live="polite"></p>
         <div class="contact-bottom reveal"><p data-i18n="contact.copy">Aberto a oportunidades, colaborações e boas conversas.</p><a href="https://github.com/carlosrenatom" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
       </section>
     </main>
